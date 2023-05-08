@@ -4,11 +4,11 @@ provider "aws"{
    secret_key="xd19bHcnyKH1bg2DMJDTG95JHQTptNHtP9Jl+BNP" 
 }
 
-provider "linode" {
+#provider "linode" {
 
-   #token = ""  
+#   #token = ""  
    
-}
+#}
 
 resource "aws_vpc" "vpc"{
    cidr_block = "10.0.0.0/16"
