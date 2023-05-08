@@ -12,7 +12,7 @@ provider "aws"{
 
 resource "aws_vpc" "vpc"{
    cidr_block = "10.0.0.0/16"
-   tags{
+   tags = {
       name="dev-vpc"
    }
 }
@@ -21,7 +21,7 @@ resource "aws_subnet" "dev-subnet-1"{
    depends_on = [ aws_vpc.vpc ]
    vpc_id = aws_vpc.vpc.id
    cidr_block = "10.0.0.0/16"
-   tags{
+   tags = {
       name="dev-subnet-1"
    }
 }
